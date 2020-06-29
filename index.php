@@ -93,7 +93,7 @@ include("processForm.php");
 					<input class="input100" type="text" name="caa" placeholder="Número de registro na Semob disponível no App da uber">
 				</div>
 
-        <button type="submit" class="contact100-form-btn" name="register">Cadastrar</button>
+        <button type="submit" class="contact100-form-btn" name="register" onSubmit="window.location.reload();"  >Cadastrar</button>
           
       </form>
     </div>
