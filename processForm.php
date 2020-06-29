@@ -16,6 +16,7 @@ include("conn.php");
     if ($result->num_rows == 0 ) {
       $sql="INSERT INTO pessoa (nome,email,dataNascimento,nomeMae,veiculo,ano,caa,cpf) VALUES ('$nome','$email','$dataNascimento','$nomeMae','$veiculo','$ano','$caa','$cpf')";
       if (mysqli_query($con, $sql)) {
+      echo "<script>alert('Seus dados foram gravados com sucesso. Um email de confirmação foi enviado para conta do email .');</script>";
       };
            
      } else {
